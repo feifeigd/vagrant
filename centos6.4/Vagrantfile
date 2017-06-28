@@ -33,7 +33,7 @@ Vagrant.configure("2") do |config|
   # your network.
   # config.vm.network "public_network"
 	
-	# 共享文件夹
+	# 共享文件夹,需要通过vagrant up启动，在虚拟机里面reboot是没用的，因为这是通过ssh执行命令映射的
 	# Share an additional folder to the guest VM. The first argument is
 	# the path on the host to the actual folder. The second argument is
 	# the path on the guest to mount the folder. And the optional third
@@ -41,6 +41,7 @@ Vagrant.configure("2") do |config|
 	# config.vm.synced_folder "../data", "/vagrant_data"
 	config.vm.synced_folder "E:/WorkSVN", "/WorkSVN"
 	config.vm.synced_folder "I:/work/WorkSVN/PhoenixH5Code", "/H5Code"
+	config.vm.synced_folder "I:/work/WorkSVN/烈火", "/LibCode"
 	# config.vm.synced_folder "I:/work/WorkSVN/PhoenixH5Code/DragonH5/server/build", "/H5Code"
 
 	# Provider-specific configuration so you can fine-tune various

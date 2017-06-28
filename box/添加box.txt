@@ -4,5 +4,9 @@ cmd>vagrant box add centos/7 centos7_virtualbox.box
 :: https://github.com/2creatives/vagrant-centos/releases/download/v6.4.2/centos64-x86_64-20140116.box
 cmd>vagrant box add centos/6.4 centos64-x86_64-20140116.box
 
+# 这个不要了，升级找不到硬盘
 :: http://iweb.dl.sourceforge.net/project/flowboard-vagrant-boxes/arch64-2013-07-26-minimal.box
 cmd>vagrant box add arch64 arch64-2013-07-26-minimal.box
+
+:: http://cloud.terry.im/vagrant/archlinux-x86_64.box
+cmd>vagrant box add arch-x86_64 archlinux-x86_64.box
